@@ -1,3 +1,3 @@
 # EscapeKeck
 
-Cool Escape Room game by Diego Acosta, and Eylul Akgul.
+Cool Escape Room game by Diego Acosta, Eylul Akgul, and Aiden McDougald.
