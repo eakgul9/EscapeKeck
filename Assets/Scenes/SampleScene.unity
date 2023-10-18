@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1499,7 +1499,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputField: {fileID: 1189937326}
   isPopupActive: 0
-  puzzleSolved: 0
   boxPopUp: {fileID: 1204266185}
 --- !u!4 &1215016863 stripped
 Transform:
@@ -1799,7 +1798,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputField: {fileID: 1189937326}
   isPopupActive: 0
-  puzzleSolved: 0
   boxPopUp: {fileID: 1204266185}
 --- !u!4 &1572817804
 Transform:
@@ -2076,7 +2074,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiInput: {fileID: 1204266189}
-  triggerActive: 0
 --- !u!1 &1817677048
 GameObject:
   m_ObjectHideFlags: 0

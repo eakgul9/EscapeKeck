@@ -5,12 +5,11 @@ using UnityEngine;
 public class Escape : MonoBehaviour {
 
     public UI_Input uiInput;
-    [SerializeField] private bool triggerActive = false;
 
     public void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("Player") && uiInput.puzzleSolved) {
+        // Debug.Log("We're in ESCAPE:" + uiInput.GetPuzzleSolved());
+        if (other.CompareTag("Player") && uiInput.GetPuzzleSolved()) {
             Debug.Log("You've escaped!");
-            Debug.Log("TRIGGGERRRRR:" + triggerActive);
         }
     }
 }
