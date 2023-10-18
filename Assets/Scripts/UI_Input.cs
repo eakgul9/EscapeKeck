@@ -7,11 +7,17 @@ public class UI_Input : MonoBehaviour {
     public TMP_InputField inputField;
     private TextMeshProUGUI resultText;
     public bool isPopupActive = false;
+    public bool puzzleSolved = false;
     public GameObject boxPopUp;
-    public void GetInputText() {
+    public void CheckInputAndClose() {
         string inputText = inputField.text;
-        resultText.text = "Entered Text: " + inputText;
-        Debug.Log(resultText);
+        if (inputText == "123") {
+            isPopupActive = false;
+            boxPopUp.SetActive(false);
+            puzzleSolved = true;
+            Debug.Log("Puzzle solved!");
+            Debug.Log(puzzleSolved);
+        }
     }
 
     public void Update() {
@@ -25,10 +31,5 @@ public class UI_Input : MonoBehaviour {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false; 
         }
-    }
-
-    public void ButtonClick() {
-        isPopupActive = false;
-        boxPopUp.SetActive(false);
     }
 }
