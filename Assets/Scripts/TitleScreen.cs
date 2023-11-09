@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Rendering.PostProcessing;
 
 public class TitleScreen : MonoBehaviour {
 
@@ -11,7 +12,30 @@ public class TitleScreen : MonoBehaviour {
     public GameObject horrorControls;
     public GameObject creditsPanel;
     public GameObject horrorCredits;
+    public PostProcessVolume postProcessVolume;
+    private bool isGlitchActive = false;
+    private float glitchSwitchInterval = 2f;
     
+    private void Start() {
+        StartCoroutine(ToggleGlitchWithTimer());
+    }
+
+    private IEnumerator ToggleGlitchWithTimer() {
+        while (true) {
+            yield return new WaitForSeconds(glitchSwitchInterval);
+
+            isGlitchActive = !isGlitchActive;
+            ToggleGlitchEffect(isGlitchActive);
+
+            if (isGlitchActive) {
+                SwitchToMainPanel();
+            }
+            else {
+                SwitchToOtherPanel();
+            }
+        }
+    }
+
     public void PlayGame() {
         SceneManager.LoadScene("Main");
     }
@@ -38,5 +62,24 @@ public class TitleScreen : MonoBehaviour {
 
     public void QuitGame() {
         Application.Quit();
+    }
+
+    public void SwitchToMainPanel() {
+        startPanel.SetActive(true);
+        horrorStart.SetActive(false);
+    }
+
+    public void SwitchToOtherPanel() {
+        startPanel.SetActive(false);
+        horrorStart.SetActive(true);
+    }
+
+    private void ToggleGlitchEffect(bool enable) {
+        if (postProcessVolume != null) {
+            ChromaticAberration chromaticAberration;
+            if (postProcessVolume.profile.TryGetSettings(out chromaticAberration)) {
+                chromaticAberration.enabled.value = enable;
+            }
+        }
     }
 }
