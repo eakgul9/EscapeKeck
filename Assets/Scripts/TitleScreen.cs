@@ -12,29 +12,29 @@ public class TitleScreen : MonoBehaviour {
     public GameObject horrorControls;
     public GameObject creditsPanel;
     public GameObject horrorCredits;
-    public PostProcessVolume postProcessVolume;
-    private bool isGlitchActive = false;
-    private float glitchSwitchInterval = 2f;
+    // public PostProcessVolume postProcessVolume;
+    // private bool isGlitchActive = false;
+    // private float glitchSwitchInterval = 2f;
     
     private void Start() {
-        StartCoroutine(ToggleGlitchWithTimer());
+        // StartCoroutine(ToggleGlitchWithTimer());
     }
 
-    private IEnumerator ToggleGlitchWithTimer() {
-        while (true) {
-            yield return new WaitForSeconds(glitchSwitchInterval);
+    // private IEnumerator ToggleGlitchWithTimer() {
+    //     while (true) {
+    //         yield return new WaitForSeconds(glitchSwitchInterval);
 
-            isGlitchActive = !isGlitchActive;
-            ToggleGlitchEffect(isGlitchActive);
+    //         isGlitchActive = !isGlitchActive;
+    //         ToggleGlitchEffect(isGlitchActive);
 
-            if (isGlitchActive) {
-                SwitchToMainPanel();
-            }
-            else {
-                SwitchToOtherPanel();
-            }
-        }
-    }
+    //         if (isGlitchActive) {
+    //             SwitchToMainPanel();
+    //         }
+    //         else {
+    //             SwitchToOtherPanel();
+    //         }
+    //     }
+    // }
 
     public void PlayGame() {
         SceneManager.LoadScene("Main");
@@ -74,12 +74,12 @@ public class TitleScreen : MonoBehaviour {
         horrorStart.SetActive(true);
     }
 
-    private void ToggleGlitchEffect(bool enable) {
-        if (postProcessVolume != null) {
-            ChromaticAberration chromaticAberration;
-            if (postProcessVolume.profile.TryGetSettings(out chromaticAberration)) {
-                chromaticAberration.enabled.value = enable;
-            }
-        }
-    }
+    // private void ToggleGlitchEffect(bool enable) {
+    //     if (postProcessVolume != null) {
+    //         ChromaticAberration chromaticAberration;
+    //         if (postProcessVolume.profile.TryGetSettings(out chromaticAberration)) {
+    //             chromaticAberration.enabled.value = enable;
+    //         }
+    //     }
+    // }
 }
