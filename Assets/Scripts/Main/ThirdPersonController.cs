@@ -201,11 +201,12 @@ namespace StarterAssets
                 _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier;
                 _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier;
             }
-
+            float mini = 340f;
+            float maxi = 20f;
             // clamp our rotations so our values are limited 360 degrees
-            _cinemachineTargetYaw = ClampAngle(_cinemachineTargetYaw, float.MinValue, float.MaxValue);
-            _cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
-
+            _cinemachineTargetYaw = ClampAngle(_cinemachineTargetYaw, -20f, 20f);
+            _cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, -10f, 10f);
+            Debug.Log(_cinemachineTargetYaw);
             // Cinemachine will follow this target
             CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch + CameraAngleOverride,
                 _cinemachineTargetYaw, 0.0f);
