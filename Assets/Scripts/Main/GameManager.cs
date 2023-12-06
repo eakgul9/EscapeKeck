@@ -11,23 +11,26 @@ public class GameManager : MonoBehaviour {
     private int puzzlesSolved;
     private int tasksCompleted;
 
-    private bool screwdriverObtained;
+    public bool screwdriverObtained;
+    public bool taskComplete;
 
-    private void awake() {
+    private void Awake() {
         // Singleton pattern
         if (_instance == null) {
-            _instance = this;
             DontDestroyOnLoad(gameObject); // Keep the game manager alive between scenes
             InitializeGameManager(); // Set up initial values
+            _instance = this;
         } else {
             Destroy(gameObject);
         }
     }
 
     private void InitializeGameManager() {
-        playerInventory = new List<string>();
-        puzzlesSolved = 0;
-        tasksCompleted = 0;
+        this.playerInventory = new List<string>();
+        this.puzzlesSolved = 0;
+        this.tasksCompleted = 0;
+        screwdriverObtained = false;
+        taskComplete = false;
     }
 
     public void AddToInventory(string itemName) {

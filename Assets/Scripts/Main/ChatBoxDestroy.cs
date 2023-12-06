@@ -14,6 +14,13 @@ public class ChatBoxDestroy : MonoBehaviour {
             hasBeenSeen = true;
         }
     }
+
+    public void OnTriggerExit(Collider other) {
+        if (other.CompareTag("Player")) {
+            chatBox.SetActive(false);
+        }
+    }
+
     void Update() {
         if (Input.GetMouseButtonDown(0) && chatBox.activeSelf) {
             chatBox.SetActive(false);

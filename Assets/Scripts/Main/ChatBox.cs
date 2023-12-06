@@ -11,6 +11,13 @@ public class ChatBox : MonoBehaviour {
             Time.timeScale = 0;
         }
     }
+    
+    public void OnTriggerExit(Collider other) {
+        if (other.CompareTag("Player")) {
+            chatBox.SetActive(false);
+        }
+    }
+
     void Update() {
         if (Input.GetMouseButtonDown(0) && chatBox.activeSelf) {
             chatBox.SetActive(false);
