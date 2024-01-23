@@ -1,0 +1,38 @@
+
+
+Evaluation and Feedback
+CMSI 4072 project ~ Spring 2024
+Diego Acosta and Eylul Akgul
+Escape Keck game project
+==============================
+
+Proposal Document:
+------------------
+   Nice work on the document.  The description is at high enough level to
+   give the reader an overview, and yet low enough level to let the reader
+   know what some of the planned technologies are that you are using, and
+   what they will be used for.
+
+   The justification section is also well done, specifying the MVP focus
+   for the initial project goal as well as anecdotal evidence that others
+   think it's an interesting idea.  Your self-reflection is evident in the
+   way you express that the project is a 'stretch' and you still have much
+   to learn.  One thing to add, to which you allude in the text, is the
+   NAMES of the IGI minors who are part of your group ~ make sure not to
+   leave them out when giving credit, and be sure to also specify what parts
+   of the project they contribute to.
+
+Proposal Presentation:
+----------------------
+   Good job on the presentation!  The slides look great, your justification
+   of both the project goals and the applicability to the course are well-
+   thought-out and clear.  This will be a fun project!  I like that you have
+   'subcontracted' some of the work to non-CS people, giving you experience
+   with a multi-disciplined team.  The slides are very macabre and quite
+   imaginative, and you handled the questions well.
+
+
+=============================================================================
+your score:  5% out of 5% which is an A-plus
+
+Great job on this presentation and proposal and great start to the semester!
