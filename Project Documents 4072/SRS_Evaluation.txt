@@ -1,0 +1,71 @@
+
+
+Evaluation and Feedback
+CMSI 4072 project ~ Spring 2024
+Diego Acosta and Eylul Akgul
+Escape Keck game project
+===============================
+
+Software Requirements Specification Document:
+---------------------------------------------
+
+Nice job on the introduction section!  This is exactly the correct level of
+   detail for this section of the document.
+
+-- Functional Requirements
+   Your functional requirements section is VERY very light.  You need many
+   more requirements here.  For example, you have:
+
+   2.1.1 The character controller shall be a top-down point-and-click
+
+   First, what does "top-down" mean?  Second, "point-and-click" at what?
+
+   Third, point with what?  If using the mouse that should be specified.
+   If using the touchpad, that should be specified.  If both, THAT should
+   be specified.  Those are *separate requirements statements*.  Fourth,
+   what is the user clicking ON?  Is it something in the background?  Is
+   it a picture of an item in the lab?  If it's an item, what item will
+   it be?  If there are multiple items, there should be a shall that says
+   there are multiple items, and a corresponding 'will' statement that
+   give a sample list of them.  If the player clicks on an item, how close
+   does the character need to be for the click to register?  If it's not
+   close enough to interact with the object, will the game present an error
+   message to the player to let them know?
+
+   Fifth, the player clicks a position and the character moves.  Is moving
+   instantaneous or does the character appear to walk over?  Is the speed of
+   movement controllable?  Is there a 'run' selection?  How is a click for
+   movement differentiated from a click to pick up an object?
+
+   Sixth, examining an object, rotating it, picking it up, etc., how are
+   these things accomplished?
+
+   Seventh, how are the transitions from room to room done?  Are there doors
+   from the lab to the annex as in RL?  Will the elevator to the lower level
+   be animated or will it be a 'teleporting' action?
+
+   I think you see by now that there are quite a few more requirements that
+   are needed here to FULLY specify what your plan is for the game.
+
+-- Performance Requirements
+   Your performance requirements are also a bit light, even though it's okay
+   for there to be fewer requirements in this section than the functional
+   section.
+
+   You say "most game interactions" should be instantaneous.  Which of these
+   interactions are NOT instantaneous?  What are the specifications for the
+   interactions ~ 1 second or 2 seconds or user is notified or what?  You'll
+   need more here....
+
+-- Environment Requirements
+   Good work here, although, it would help to know if these are 'minimum' or
+   'typical' requirements.  Another thing to consider is, there will be some
+   differences between the hardware/software used for DEVELOPING the game and
+   that needed to RUN the game.
+
+=============================================================================
+your score:  7.5% out of 10% which is a C
+
+All in all, not a bad first effort, you just need to fill in more specifics.
+Make the changes as suggested above, including many more requirements for
+the second submission and you'll get the full 10% on this document.
