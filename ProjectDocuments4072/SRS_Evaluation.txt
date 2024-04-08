@@ -27,7 +27,7 @@ Nice job on the introduction section!  This is exactly the correct level of
    it a picture of an item in the lab?  If it's an item, what item will
    it be?  If there are multiple items, there should be a shall that says
    there are multiple items, and a corresponding 'will' statement that
-   give a sample list of them.  If the player clicks on an item, how close
+   gives a sample list of them.  If the player clicks on an item, how close
    does the character need to be for the click to register?  If it's not
    close enough to interact with the object, will the game present an error
    message to the player to let them know?
@@ -69,3 +69,15 @@ your score:  7.5% out of 10% which is a C
 All in all, not a bad first effort, you just need to fill in more specifics.
 Make the changes as suggested above, including many more requirements for
 the second submission and you'll get the full 10% on this document.
+
+=============================================================================
+SECOND EVALUATION:
+
+your score:  9.5% out of 10% which is an A
+
+You have done a good job of expanding on your requirements!  There are quite
+a few more and they are all very well-stated.  Also, it looks like you added
+some 'will' statements to your requirements, which is good to help explain
+what each 'shall' statement is about.  For your Environment and Performance
+requirements, those seem fine.  Your Functional requirements are better, but
+still a little light, but you addressed the comments!
