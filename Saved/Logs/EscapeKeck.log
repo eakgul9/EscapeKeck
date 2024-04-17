@@ -1211,3 +1211,7 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.04.17-06.55.01:227][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000471 seconds (updated 0 objects)
 [2024.04.17-06.55.01:275][  1]LogSlate: Took 0.005460 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
 [2024.04.17-06.55.02:115][  7]LogNavigationDataBuild: Display:    FRecastNavMeshGenerator::ProcessTileTasksAndGetUpdatedTiles build time: 3.53s
+[2024.04.17-06.55.44:355][199]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.17-06.55.44:519][202]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.17-06.55.47:473][434]LogActorFactory: Loading ActorFactory Class /Script/Engine.LevelInstance
+[2024.04.17-06.56.22:458][ 66]LogDerivedDataCache: C:/Users/djaco/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.188 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 690 files in 1244 folders with total size 36 MiB.
